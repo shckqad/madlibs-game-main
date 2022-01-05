@@ -57,3 +57,21 @@ for (var z = 0; z < bodyPartArray.length; z++) {
   var random = Math.floor(Math.random() * bodyParts.length);
   bodyPartArray[z].textContent = bodyParts[random];
 }
+
+//Create function getWord with paramaters being type that returns a word each time function is called.
+const getWord = function(type) {
+  selectRand = Math.floor(Math.random() * verbArray.length);
+  if (type == "verb") {
+    return verbs[random];
+  } else if (type == "noun") {
+    return nouns[random];
+  } else if (type == "adverb") {
+    return adverbs[random];
+  } else if (type == "bodyparts") {
+    return bodyParts[random];
+  } else if (type == "adjectives") {
+    return adjectives[random];
+  } else if (type == "pluralnoun") {
+    return pluralNouns[random];
+  }
+}
